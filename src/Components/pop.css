@@ -1,0 +1,58 @@
+.card {
+    width: 60vw;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: column;
+    align-items: center;
+    gap: 10px;
+    transition: all .2s ease-in-out;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.close {
+    font-size: 1.5em;
+    padding: .1em;
+    color: #d9534f;
+    border-radius: 100%;
+    transition: all .2s ease-out;
+}
+
+.close:hover {
+    cursor: pointer;
+    scale: 1.2;
+    color: white;
+    background-color: #d9534f;
+}
+
+.card img {
+    width: 10vw;
+    aspect-ratio: 1;
+    border-radius: 100%;
+    object-fit: cover;
+    background-position: center;
+}
+
+.yes {
+    color: forestgreen;
+}
+
+.no {
+    color: #d9534f
+}
+
+@media (max-width : 800px) {
+
+    .card {
+        width: 90vw;
+    }
+
+    .card img {
+        width: 30vw;
+    }
+}
